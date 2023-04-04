@@ -1,19 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-
-int main(){
-    int t,n,stp,arr[40];
-    cin>>t;
-    while(t>0){
-        cin>>n;
-        if(n%2==0){
-            cout<<-1<<endl;
-            t--;
-            continue;
-        }
-        int x;
-        stp=0;
-    
+ 
+void steps(int n,int stp,int arr[]){
+        int x;  
         while(stp<=41){
             x=n/2;
           if(x==1){
@@ -37,7 +26,21 @@ int main(){
             }
             cout<<endl;
         }
-        --t;
        
+}
+
+int main(){
+   int t,n,stp,arr[40];
+   cin>>t;
+   while(t>0){
+    cin>>n;
+    if(n%2==0){
+        cout<<-1<<endl;
+        t--;
+        continue;
     }
+    steps(n,0,arr);
+    t--;
+   }
+
 }
