@@ -10,7 +10,7 @@ void steps(int n,int stp,int arr[]){
           }
           else if(n%2==0){
             arr[stp++]=1;
-            n=n+1;
+            n+=1;
           }
           else{
             arr[stp++]=2;
