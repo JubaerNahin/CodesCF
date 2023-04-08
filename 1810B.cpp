@@ -24,7 +24,7 @@ void steps(int n,int stp,int arr[]){
             }
             cout<<endl;
         }
-       
+
 }
 
 int main(){
